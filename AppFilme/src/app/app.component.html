@@ -1,0 +1,10 @@
+<h2>Buscar Filmes</h2>
+
+<input [(ngModel)]="termoBusca" placeholder="Digite o nome do filme">
+<button (click)="procurarFilmes()">Buscar</button>
+
+<ul>
+  <li *ngFor="let filme of filmes">
+    {{ filme.Title }} ({{ filme.Year }})
+  </li>
+</ul>
